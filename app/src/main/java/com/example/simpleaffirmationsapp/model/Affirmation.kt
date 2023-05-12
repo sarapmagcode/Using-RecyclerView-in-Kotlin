@@ -1,4 +1,12 @@
 package com.example.simpleaffirmationsapp.model
 
-// must have at least 1 property defined
-data class Affirmation(val stringResourceId: Int)
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+/**
+ * Must have at least 1 property defined
+ */
+data class Affirmation(
+    @StringRes val stringResourceId: Int,
+    @DrawableRes val imageResourceId: Int
+)
